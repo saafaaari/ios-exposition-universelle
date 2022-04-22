@@ -29,12 +29,28 @@ Auto Layout 적용과 Dynamic Type을 통한 Accessibility 향상
 
 ## 개발환경 및 라이브러리
 
-[![swift](https://img.shields.io/badge/swift-5.0-orange)]()
-[![xcode](https://img.shields.io/badge/Xcode-13.1-blue)]()
-[![iOS](https://img.shields.io/badge/iOS-15.0-red)]()
+- [![swift](https://img.shields.io/badge/swift-5.0-orange)]()
+- [![xcode](https://img.shields.io/badge/Xcode-13.1-blue)]()
+- [![iOS](https://img.shields.io/badge/iOS-15.0-red)]()
 
 ## 키워드
-`MVC` `JSONDecoder` `UITableView` `CustomCell` `ReusableCell` `UIListContentConfiguration` `UnitTest` `Bundel` `DataSource & Delegate` `Accessibility & Dynamic Types` `AutoLayout` `NavigationController` `NSMutableAttributedString` `NSCoder &  NSCoding` `DI(Dependency Injection)` `NumberFormatter`
+
+- `MVC`
+- `JSONDecoder`
+- `UITableView`
+- `CustomCell`
+- `ReusableCell`
+- `UIListContentConfiguration`
+- `UnitTest`
+- `Bundle`
+- `DataSource & Delegate`
+- `Accessibility & Dynamic Types`
+- `AutoLayout`
+- `NavigationController`
+- `NSMutableAttributedString`
+- `NSCoder &  NSCoding`
+- `DI(Dependency Injection)`
+- `NumberFormatter`
 
 ## 구현내용
 - Bundle를 이용한 JSON파일 접근
