@@ -15,7 +15,7 @@ struct Expo: Codable {
     let description: String
     
     var formattedVisitors: String {
-        visitors.changedFormat() + " 명"
+        visitors.changedFormat() + String(format: NSLocalizedString("people", comment: "인원"))
     }
 }
 
