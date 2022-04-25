@@ -49,7 +49,7 @@ private extension MainViewController {
         
         titleLabel.text = String(expoInfomation.title[..<separationIndex]) + "\n" + String(expoInfomation.title[separationIndex...])
         posterImageView.image = UIImage(named: "poster")
-        visitorsLabel.text = .visitor + " : \(expoInfomation.formattedVisitors)"
+        visitorsLabel.text = setUpVisitorsLabel(expoInfomation)
         locationLabel.text = .location + " : \(expoInfomation.location)"
         durationLabel.text = .duration + " : \(expoInfomation.duration)"
         changeFont()
@@ -62,6 +62,14 @@ private extension MainViewController {
         visitorsLabel.changePartFont(part: .visitor)
         locationLabel.changePartFont(part: .location)
         durationLabel.changePartFont(part: .duration)
+    }
+    
+    func setUpVisitorsLabel(_ expo: Expo) -> String {
+        if let formattedVisitors = expo.formattedVisitors {
+            return .visitor + " : \(formattedVisitors)" + " \(String(format: NSLocalizedString("people", comment: "인원")))"
+        } else {
+            return "FormatError"
+        }
     }
     
     func fixViewOrientation(_ fixed: Bool) {
