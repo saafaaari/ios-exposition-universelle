@@ -14,17 +14,17 @@ struct Expo: Codable {
     let duration: String
     let description: String
     
-    var formattedVisitors: String {
-        visitors.changedFormat() + " 명"
+    var formattedVisitors: String? {
+        visitors.changedFormat()
     }
 }
 
 private extension Int {
-    func changedFormat() -> String {
+    func changedFormat() -> String? {
         let numberFormatter = NumberFormatter()
         
         numberFormatter.numberStyle = .decimal
     
-        return numberFormatter.string(from: self as NSNumber) ?? "FormatError"
+        return numberFormatter.string(from: self as NSNumber)
     }
 }
