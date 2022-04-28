@@ -163,9 +163,3 @@ itemCell.itemShortDescriptionLabel.text = itemsList?[indexPath.row].shortDescrip
 ```
 위 코드를 이용하여 데이터의 인스턴스를 외부에서 Initializer를 이용하여 주입했다.
 
----
-###  버튼 안 content(text)의 높이에 따라 버튼을 포함하고 있는 stackView의 높이를 늘리는 방법
-
----
-
-### 특정 ViewController 화면 고정
